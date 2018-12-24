@@ -1,0 +1,421 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 17, ../sass/screen.scss */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* line 20, ../sass/screen.scss */
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 24, ../sass/screen.scss */
+header {
+  background-color: #cc9e86;
+  border-bottom: 4px solid #fff;
+}
+/* line 27, ../sass/screen.scss */
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 30, ../sass/screen.scss */
+header .header-content .menuToggle {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  display: none;
+}
+/* line 39, ../sass/screen.scss */
+/*  header .header-content img {
+    padding-left: 65px;
+    padding-top: 40px;
+  }*/
+/* line 43, ../sass/screen.scss */
+header .header-content nav ul {
+  display: flex;
+}
+/* line 45, ../sass/screen.scss */
+header .header-content nav ul li {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  padding: 77px 15px 23px 15px;
+  text-transform: uppercase;
+}
+/* line 52, ../sass/screen.scss */
+header .header-content nav ul li:hover {
+  background-color: #947361;
+}
+
+/* line 58, ../sass/screen.scss */
+.section-catalog {
+  padding-top: 140px;
+  padding-bottom: 170px;
+  border-bottom: 4px solid #fff;
+  background: url(../images/section-catalog-bg.png) no-repeat;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ ╨╕ Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: cover;
+}
+/* line 68, ../sass/screen.scss */
+.section-catalog .catalog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* line 73, ../sass/screen.scss */
+.section-catalog .catalog-content img {
+  width: 660px;
+}
+/* line 76, ../sass/screen.scss */
+.section-catalog .catalog-content a {
+  margin-top: 125px;
+  padding: 38px 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+}
+/* line 86, ../sass/screen.scss */
+.section-catalog .catalog-content a:hover {
+  background-color: #947361;
+}
+
+/* line 91, ../sass/screen.scss */
+.section-order {
+  background: url(../images/section-order-bg.png) no-repeat;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ ╨╕ Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: cover;
+  border-bottom: 4px solid #fff;
+}
+/* line 98, ../sass/screen.scss */
+.section-order .order-head {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px 0;
+  border-bottom: 4px solid #fff;
+}
+/* line 107, ../sass/screen.scss */
+.section-order .order-content {
+  padding-left: 110px;
+  padding-top: 144px;
+  padding-bottom: 60px;
+  display: flex;
+}
+/* line 112, ../sass/screen.scss */
+.section-order .order-content .text-order {
+  padding-bottom: 80px;
+
+
+}
+/* line 115, ../sass/screen.scss */
+.section-order .order-content img {
+  padding-bottom: 2px;
+  margin-right: 15px;
+}
+/* line 119, ../sass/screen.scss */
+.section-order .order-content span {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 126, ../sass/screen.scss */
+.section-order .btn-order {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 170px;
+}
+/* line 132, ../sass/screen.scss */
+.section-order .btn-order a {
+  padding: 38px 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+}
+/* line 141, ../sass/screen.scss */
+.section-order .btn-order a:hover {
+  background-color: #947361;
+}
+
+/* line 146, ../sass/screen.scss */
+.section-advantage {
+  background: url(../images/section-advantage-bg.png) no-repeat;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ ╨╕ Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: cover;
+}
+/* line 152, ../sass/screen.scss */
+.section-advantage .advantage-head {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px 0;
+  border-bottom: 4px solid #fff;
+}
+/* line 161, ../sass/screen.scss */
+.section-advantage .advantage-content {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 122px;
+  padding-bottom: 122px;
+}
+/* line 167, ../sass/screen.scss */
+.section-advantage .advantage-content .advantage-text {
+  display: flex;
+  margin-bottom: 26px;
+}
+/* line 170, ../sass/screen.scss */
+.section-advantage .advantage-content .advantage-text i {
+  margin-right: 60px;
+  font-size: 60px;
+}
+/* line 175, ../sass/screen.scss */
+.section-advantage .advantage-content .advantage-text .p-text {
+  padding-top: 20px;
+}
+
+/* line 181, ../sass/screen.scss */
+footer {
+  border-bottom: 4px solid #fff;
+  background-color: #947361;
+}
+/* line 184, ../sass/screen.scss */
+footer .footer-content {
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* line 192, ../sass/screen.scss */
+footer .left-bar {
+  display: flex;
+  flex-direction: column;
+}
+/* line 195, ../sass/screen.scss */
+footer .left-bar .m-text {
+  margin-bottom: 30px;
+}
+/* line 200, ../sass/screen.scss */
+footer .rigth-bar {
+  display: flex;
+  flex-direction: column;
+}
+/* line 203, ../sass/screen.scss */
+footer .rigth-bar .m-text {
+  margin-bottom: 30px;
+}
+/* line 207, ../sass/screen.scss */
+footer .rigth-bar .email-footer {
+  font-weight: 500;
+}
+/* line 211, ../sass/screen.scss */
+footer div {
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 210, ../sass/screen.scss */
+  /* line 220, ../sass/screen.scss */
+  header .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* line 225, ../sass/screen.scss */
+  header .header-content img {
+    padding-left: 0px;
+  }
+
+  /* line 228, ../sass/screen.scss */
+  .wrapper {
+    width: 100%;
+  }
+  .section-advantage .advantage-content .advantage-text {
+    font-style: 15px;
+  }
+}
+@media screen and (max-width: 789px) {
+  /* line 233, ../sass/screen.scss */
+  .section-advantage .advantage-content .advantage-text {
+    margin-left: 25px;
+    font-style: 15px;
+  }
+
+  /* line 236, ../sass/screen.scss */
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* line 240, ../sass/screen.scss */
+  header .header-content nav ul {
+    padding-top: 30px;
+  }
+
+  /* line 242, ../sass/screen.scss */
+  header .header-content nav ul li {
+    font-size: 27px;
+    font-weight: 500;
+    color: #fff;
+    padding: 46px 15px 23px 15px;
+    text-transform: uppercase;
+  }
+
+  /* line 249, ../sass/screen.scss */
+  .section-catalog .catalog-content img {
+    width: 86%;
+  }
+
+  /* line 252, ../sass/screen.scss */
+  footer .footer-content {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 260, ../sass/screen.scss */
+  .section-order .order-content {
+    padding-left: 24px;
+    padding-top: 144px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 789px) {
+  /* line 269, ../sass/screen.scss */
+  footer .left-bar {
+    margin-bottom: 35px;
+  }
+  .section-advantage .advantage-content .advantage-text {
+    font-style: 15px;
+  }
+}
+
+
+.Logo{
+  padding: 0px;
+}
